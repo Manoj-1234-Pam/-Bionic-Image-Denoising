@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<!-- contact -->
+<section class="contact_section layout_padding" id="contact">
+   <div class="container ">
+      <div class="heading_container">
+         <h2>
+            Predection
+         </h2>
+         <img src="{% static 'images/plug.png' %}" alt="">
+      </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <form action="" method="post">
+               <div>
+                  <input name="txt1" type="text" placeholder="Enter Image Path*" />
+               </div>
+               <div>
+                  <input name="txt2" type="text" placeholder="Image Name After De-Noising*" />
+               </div>
+               <div class="d-flex ">
+                  {% csrf_token %}
+                  <button>
+                     SEND
+                  </button>
+               </div>
+            </form>
+         </div>
+         <div class="col-md-6">
+            <div class="map_container">
+               <div class="map-responsive">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+ <!-- contact -->
+{% endblock body %}
+
+
