@@ -5,5 +5,7 @@ This project focuses on denoising bionic images that are affected by Gaussian no
 **Project Overview**
 
 **Objective:** To reduce Gaussian noise in bionic images using the DWT technique and evaluate the performance using PSNR.
+
 **Techniques Used:** Discrete Wavelet Transform (DWT), Gaussian Noise Reduction.
+
 **Evaluation Metric:** Peak Signal-to-Noise Ratio (PSNR).
